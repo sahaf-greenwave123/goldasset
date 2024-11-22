@@ -1,0 +1,2940 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+}
+
+/* .............................home SECTION................................................................. */
+.linkhome{
+    padding: 7px 0 0 0px;
+}
+ .nav-container .link {
+    display: flex;
+    padding: 8px 0 0 10px;
+    margin: 0 0 0 25px;
+    
+}
+
+.nav-container .link a {
+    position: relative;
+    font-size: 1.2rem;
+    color: antiquewhite;
+    
+    text-decoration: none;
+    font-weight: 550;
+    transition: 0.3s linear;
+}
+
+.nav-container .link a::before {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color:  #f3c14a;
+    transition: 0.2s linear;
+}
+
+.nav-container .link a:hover::before {
+    width: 100%;
+}
+
+.nav-container .link a:hover {
+    color: #f3c14a;
+}
+ 
+
+
+
+
+
+
+/* ..............................=============== header SECTION ==================.......................................... */
+
+
+
+.link{
+    display: inline-block;
+}
+
+.linkselec{
+    display: inline-block;
+}
+
+
+
+.greendot{
+    padding: 0 0 0 20px;
+}
+
+
+
+
+.siams{
+    font-size: 30px;
+}
+
+
+
+.siam{
+    padding: 100px 0px 30px;
+    
+}
+header {
+    background-image: url('../image/S.E.M\ invest\ fund\ backgrud.jpg');  
+    background-size: cover;
+    background-position: center;
+    height: 855px;
+    
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.772);
+    background-blend-mode: multiply;
+    
+
+
+
+}
+.logoNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5% 0 5%;
+}
+
+
+
+
+
+
+.logoleft{
+    display: flex;
+    margin: 0 0 0 0;
+    padding: 30px 0px 0 0;
+}
+/* .logo{
+    padding: 40px 1210px 0 0;
+} */
+
+header h1 {
+    font-size: 80px;
+    margin: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2c2c2c;
+    padding: 1em;
+    color: #f3c14a;
+}
+/* nav a {
+    color: #f3c14a;
+    text-decoration: none;
+    margin: 0 1em;
+} */
+.container {
+    padding: 115px;        
+    
+}
+.highlight-section h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+.highlight-section p {
+    color: #888;
+    font-size: 1.2em;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    margin: 50px 20px 50px 20px;
+}
+.grid-item {
+    border: 1px solid #ddd;
+    padding: 1.5em;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.grid-item h3 {
+    margin: 0;
+    margin-bottom: 0.5em;
+    color: #f3c14a;
+}
+
+
+/*....................================================mousebody SECTION================================................. */ 
+.white{
+    height: 265px;
+    width: 1520px;
+    clip-path: ellipse(50% 25% at 50% 99%);
+}
+
+
+
+.mousebody {
+    margin: 0;
+    padding: 23px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    
+}
+
+.scroll-down {
+    position: relative;
+    width: 30px;
+    height: 50px;
+    border: 2px solid  #f3c14a;
+    border-radius: 30px;
+    box-sizing: border-box;
+    animation: bounce 2s infinite;
+    padding: 0 0 0 0;
+}
+
+.scroll-down::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color:  #f3c14a;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scroll 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+        top: 10px;
+    }
+    50% {
+        opacity: 0.5;
+        top: 20px;
+    }
+    100% {
+        opacity: 0;
+        top: 30px;
+    }
+}
+
+
+
+
+
+
+
+                                                            /* scrollbar */
+
+ /*....................================================webkit-scrollbar SECTION================================................. */ 
+
+ ::-webkit-scrollbar {
+    width: 15px; /* Width for vertical scrollbar */
+}
+
+/* Style the track */
+::-webkit-scrollbar-track {
+    background: linear-gradient(#ffffff,#c0904d, black)/* Background color of the track */
+}
+
+/* Style the thumb */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#c0904d,white); /* Gradient color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+
+/* ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(187, 226, 80);
+}  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------.................====================About us Section======================.................----------------- */
+.about-section{
+    background-color:#f5f8fc;
+}
+.about-text{
+    display: flex;
+    margin: 85px 0 30px -12px;
+    padding: 70px 29px 65px 82px;
+
+}
+.about-right{
+    padding: 40px 40px 40px 40px;
+}
+.about-left{
+    padding: 40px 40px 40px 40px;
+
+}
+.leftone{
+    height: 360px;
+    width: 561px;
+}
+.rightone{
+    height: 230px;
+    width: 561px;
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------.................====================History us Section======================.................----------------- */
+
+
+
+
+
+
+
+.history-section {
+    margin-top: 90px;
+    padding: 12px 235px 19px 235px;
+}
+.history-section h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+.history-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+}
+.history-card {
+    background-color: #c0904d;
+    color: white;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+.history-card:hover {
+    transform: translateY(-5px);
+}
+.history-card h3 {
+    margin-bottom: 0.5em;
+}
+.history-card p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+
+
+
+
+/* --------------.................==================== MEET OUR TEAM  Section======================.................----------------- */
+
+
+
+
+.meetone{
+    background-color: #f5f8fc;
+    margin: 100px 0px 100px 0px;
+    padding: 60px 70px 60px 70px;
+}
+.meetourteam{
+    display: flex;
+    padding: 10px 10px 10px 10px;
+   
+}
+.meetgold{
+    color: #dcaf6d;
+}
+
+
+
+
+
+
+/* --------------.................==================== massage  Section======================.................----------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+.bodyone {
+    margin: 0;
+    padding: 0;
+    background-image: url('../image/S.E.M\ invest\ fund\ backgrud.jpg'); /* Replace with your image URL */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.772);
+    background-blend-mode: multiply;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.containerone {
+    width: 95%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-section {
+    background: rgba(255, 255, 255, 0.2); /* White background with more transparency */
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    backdrop-filter: blur(-15px); /* Adds a blur effect for better contrast */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Optional border for styling */
+}
+
+.message-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    margin-bottom: 15px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    padding: 10px 5px;
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: #ddd;
+}
+
+.send-button {
+    background-color: #f0a500;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s;
+}
+
+.send-button:hover {
+    background-color: #e08e00;
+}
+
+/* ................................massage two image Section ............................ */
+
+.message-image{
+    display: flex;
+    margin: 0 0 0 0 ;
+    padding: 0 0 0 0 ;
+}
+
+/* .message-imageone{
+    height: 380px;
+    width: 475px;
+    margin: -140px 25px 100px 380px;
+    padding: 0 0 0 0 ;
+} */
+
+
+.map-left{
+    padding: 0 0 0 0 ;
+    margin: -230px 85px 400px 100px;
+}
+
+
+
+
+.info-section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    color: #000;
+   
+}
+
+
+.map {
+    
+    position: relative;
+    left: 90px;
+    top:80px;
+    padding: 0 0 0 0 ;
+    margin: 0 0 0 0 ;
+}
+.message-imagetwo{
+    margin: -103px 0px 60px 230px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px  #e08e00;
+    height: 250px;
+    width: 250px;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+/* --------------.................==================== investment  Section======================.................----------------- */
+.more-investment{
+    background-color: #f5f8fc;
+    padding: 100px 0px 0px 0;
+    
+}
+
+.investment{
+ text-align: center;
+ margin: 0px 0px 0px 0px;
+ 
+}
+.investmentone{
+    display: flex;
+}
+.investment-imageone{
+    padding: 30px 10px 0px 170px;
+
+    margin: 0px 0px -8px;
+    height: 450px;
+    width: 570px;
+
+}
+
+
+
+.investment-imagetwo{
+    padding: 0px 210px 0px 0px;
+    margin: 0px 0px -8px;
+    height: 450px;
+    width: 570px;
+}
+
+
+.invest{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.investwave{
+    padding: 30px 10px 0px 135px;
+    margin: 0px 0px 0px 0px;
+}
+  
+
+
+
+
+ .notwhite{
+    
+    height: 105px;
+    width: 1520px;
+    clip-path: ellipse(50% 25% at 50% 99%);
+    padding: 0 0 0 0;
+    margin: 0 0 -5px 0;
+
+}
+
+/* /* --------------.................====================footer  Section======================.................----------------- * */
+
+.footerone{
+    text-align: center;
+}
+
+
+
+.social-linkso{
+    margin: 0px 0 0 499px;
+    padding: 0 0 0 0 ;
+    display: inline-flex;
+    justify-content: center;
+}
+
+
+
+.social-linkso i{
+    align-items: center;
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 0.2rem solid rgb(250 235 215);
+    border-radius: 50%;
+    color:rgb(250 235 215);
+    margin: 5px 15px;
+    font-size: 1.5rem;
+    transition: 0.2s linear;
+}
+.social-linkso i:hover{
+    align-items: center;
+    justify-content: center;
+    scale: 1.3;
+    color: black;
+    background-color: rgb(250 235 215);
+    filter: drop-shadow(0 0 10px rgb(250 235 215));
+    }
+
+
+/*=================================================== ...mobile size ..===============================================================*/
+
+
+
+   /* ==================================================================- size -====================================================*/
+
+
+
+   @media only screen and (max-width: 355px){
+    
+
+
+
+
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f4f4f9;
+    }
+    
+    /* .............................home SECTION................................................................. */
+    .linkhome{
+        padding: 7px 0 0 0px;
+    }
+     .nav-container .link {
+       
+        padding: 2px 0 0 4px;
+        margin: 0 0 0 10px;
+        
+    }
+    
+    .nav-container .link a {
+        position: relative;
+        font-size: 0.5rem;
+        color: antiquewhite;
+        
+        text-decoration: none;
+        font-weight: 50;
+        transition: 0.3s linear;
+    }
+    
+    .nav-container .link a::before {
+        position: absolute;
+        content: "";
+        bottom: -3px;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        background-color:  #f3c14a;
+        transition: 0.2s linear;
+    }
+    
+    .nav-container .link a:hover::before {
+        width: 100%;
+    }
+    
+    .nav-container .link a:hover {
+        color: #f3c14a;
+    }
+     
+    
+    
+    
+    
+    
+    
+    /* ..............................=============== header SECTION ==================.......................................... */
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .siams{
+        font-size: 15px;
+    }
+    
+    
+    
+    .siam{
+        padding: 50px 0px 10px;
+    }
+    header {
+        background-image: url('../image/S.E.M\ invest\ fund\ backgrud.jpg');  
+        background-size: cover;
+        background-position: center;
+        height: 710px;
+        
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.772);
+        background-blend-mode: multiply;
+        
+    
+    
+    
+    }
+    .logoNav{
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5% 0 5%;
+    }
+    
+    .link{
+        display: inline-block;
+    }
+    
+    .linkselec{
+        display: inline-block;
+    }
+    
+    .greendot{
+       font-size: 10px;
+    }
+    
+    .logoleft{
+        display: block;
+        margin: 0 0 0 0;
+        padding: 10px 0px 0 0;
+    }
+    /* .logo{
+        padding: 40px 1210px 0 0;
+    } */
+    
+    header h1 {
+        font-size: 30px;
+        margin: 0;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: #2c2c2c;
+        padding: 1em;
+        color: #f3c14a;
+    }
+    /* nav a {
+        color: #f3c14a;
+        text-decoration: none;
+        margin: 0 1em;
+    } */
+    .container {
+        padding: 5px;        
+        
+    }
+    .highlight-section h2 {
+        font-size: 15px;
+        margin-bottom: 0.5em;
+        text-align: center;
+    }
+    .highlight-section p {
+        color: #888;
+        font-size: 1.2em;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.1em;
+        margin: 2px 2px 2px 2px;
+    }
+    .grid-item {
+        border: 1px solid #ddd;
+        padding: 0.7em;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .grid-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .grid-item h3 {
+        margin: 0;
+        margin-bottom: 0.5em;
+        color: #f3c14a;
+    }
+    
+    
+    /*....................================================mousebody SECTION================================................. */ 
+    .white{
+        height: 265px;
+        width: 320px;
+        clip-path: ellipse(50% 25% at 50% 99%);
+    }
+    
+    
+    
+    .mousebody {
+        margin: 0;
+        padding: 23px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        
+    }
+    
+    .scroll-down {
+        position: relative;
+        width: 22px;
+        height: 37px;
+        border: 2px solid  #f3c14a;
+        border-radius: 30px;
+        box-sizing: border-box;
+        animation: bounce 2s infinite;
+        padding: 0 0 0 0;
+    }
+    
+    .scroll-down::after {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-color:  #f3c14a;
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: scroll 2s infinite;
+    }
+    
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(10px);
+        }
+    }
+    
+    @keyframes scroll {
+        0% {
+            opacity: 1;
+            top: 10px;
+        }
+        50% {
+            opacity: 0.5;
+            top: 20px;
+        }
+        100% {
+            opacity: 0;
+            top: 30px;
+        }
+    }
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            /* scrollbar */
+
+ /*....................================================webkit-scrollbar SECTION================================................. */ 
+
+ ::-webkit-scrollbar {
+    width: 0px; /* Width for vertical scrollbar */
+}
+
+/* Style the track */
+::-webkit-scrollbar-track {
+    background: linear-gradient(#ffffff,#c0904d, black)/* Background color of the track */
+}
+
+/* Style the thumb */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#c0904d,white); /* Gradient color */
+    border-radius: 0px; /* Rounded corners */
+}
+
+
+
+/* --------------.................====================About us Section======================.................----------------- */
+
+.about-text{
+    display: block;
+    margin: 5px 0 5px -6px;
+    padding: 7px 2px 6px 8px;
+
+}
+.about-right{
+    padding: 4px 4px 4px 4px;
+}
+.about-left{
+    padding: 4px 4px 4px 4px;
+
+}
+.leftone{
+    height: 160px;
+    width: 305px;
+}
+.rightone{
+    height: 130px;
+    width: 305px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------.................====================History us Section======================.................----------------- */
+
+
+
+
+
+
+
+.history-section {
+    margin-top: 90px;
+    padding: 5px 50px 8px 35px;
+}
+.history-section h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+}
+.history-card {
+    background-color: #c0904d;
+    color: white;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+.history-card:hover {
+    transform: translateY(-5px);
+}
+.history-card h3 {
+    margin-bottom: 0.5em;
+}
+.history-card p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------.................==================== MEET OUR TEAM  Section======================.................----------------- */
+
+
+
+
+.meetone{
+    background-color: #f5f8fc;
+    margin: 10px 5px 10px 5px;
+    padding: 6px 0px 6px 0px;
+}
+.meetourteam{
+    display: block;
+    padding: 10px 0px 10px 0px;
+   
+}
+.meetgold{
+    color: #dcaf6d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------.................==================== massage  Section======================.................----------------- */
+
+
+
+
+
+
+
+
+
+.bodyone {
+    margin: 0;
+    padding: 0;
+    background-image: url('../image/ch.png'); /* Replace with your image URL */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.containerone {
+    width: 96%;
+    height: 900px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-section {
+    background: rgba(255, 255, 255, 0.2); /* White background with more transparency */
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    backdrop-filter: blur(5px); /* Adds a blur effect for better contrast */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Optional border for styling */
+}
+
+.message-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    margin-bottom: 15px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    padding: 10px 5px;
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: #ddd;
+}
+
+.send-button {
+    background-color: #f0a500;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s;
+}
+
+.send-button:hover {
+    background-color: #e08e00;
+}
+
+/* ................................massage two image Section ............................ */
+
+.message-image{
+    display: block;
+    margin: -160px 0px 0 0;
+    padding: 0 0 0 0 ;
+}
+
+/* .message-imageone{
+    height: 380px;
+    width: 475px;
+    margin: -140px 25px 100px 380px;
+    padding: 0 0 0 0 ;
+} */
+
+
+.map-left{
+    padding: 0 0 0 0 ;
+    margin: 0px 0px 0px 0px;
+}
+
+
+
+
+.info-section {
+    margin-top: 30px;
+    display: block;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    color: #000;
+   
+}
+
+
+.map {
+    
+    position: relative;
+    left: 0px;
+    top:10px;
+    padding: 0 0 0 0 ;
+    margin: 0 0 0 0 ;
+}
+.message-imagetwo{
+    margin: 20px 0px 0px 0px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px  #e08e00;
+    height: 250px;
+    width: 305px;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------.................==================== investment  Section======================.................----------------- */
+.more-investment{
+    background-color: #f5f8fc;
+    padding: 30px 0px 0px 0;
+    
+}
+
+.investment{
+ text-align: center;
+ margin: 0px 0px 0px 0px;
+ 
+}
+.investmentone{
+    display: block;
+    
+}
+.investment-imageone{
+    padding: 10px 1px 0px 2px;
+        margin: 0px 0px -3px;
+        height: 150px;
+        width: 305px;
+
+}
+
+
+
+.investment-imagetwo{
+    padding: 10px 1px 0px 2px;
+    margin: 0px 0px -3px;
+    height: 150px;
+    width: 305px;
+}
+
+
+.invest{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.investwave{
+    padding: 10px 5px 0px 5px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+.notwhite{
+    
+    height: 45px;
+    width: 320px;
+    clip-path: ellipse(50% 25% at 50% 99%);
+    padding: 0 0 0 0;
+    margin: 0 0 -5px 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /* --------------.................====================footer  Section======================.................----------------- * */
+
+.footerone{
+    text-align: center;
+}
+
+
+
+.social-linkso{
+    margin: 0px 0 0 70px;
+    padding: 0 0 0 0 ;
+    display: inline-flex;
+    justify-content: center;
+}
+
+
+
+.social-linkso i{
+    align-items: center;
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 1rem;
+    height: 1rem;
+    background-color: transparent;
+    border: 0.2rem solid rgb(250 235 215);
+    border-radius: 50%;
+    color:rgb(250 235 215);
+    margin: 1px 2px;
+    font-size: 1.5rem;
+    transition: 0.2s linear;
+}
+.social-linkso i:hover{
+    align-items: center;
+    justify-content: center;
+    scale: 1.3;
+    color: black;
+    background-color: rgb(250 235 215);
+    filter: drop-shadow(0 0 10px rgb(250 235 215));
+    }
+
+
+} 
+
+
+
+
+
+
+
+ /* ,,,,,,,,,,,,,,,,,,,,1.2,,,,,,,,,,,,,,,,,,, */ 
+
+
+ @media only screen and (min-width: 356px) and (max-width: 668px){
+ 
+
+
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f4f4f9;
+    }
+    
+    /* .............................home SECTION................................................................. */
+    .linkhome{
+        padding: 7px 0 0 0px;
+    }
+     .nav-container .link {
+       
+        padding: 2px 0 0 4px;
+        margin: 0 0 0 10px;
+        
+        
+    }
+    
+    .nav-container .link a {
+        position: relative;
+        font-size: 10px;
+        color: antiquewhite;
+        
+        text-decoration: none;
+        font-weight: 50;
+        transition: 0.3s linear;
+    }
+    
+    .nav-container .link a::before {
+        position: absolute;
+        content: "";
+        bottom: -3px;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        background-color:  #f3c14a;
+        transition: 0.2s linear;
+    }
+    
+    .nav-container .link a:hover::before {
+        width: 100%;
+    }
+    
+    .nav-container .link a:hover {
+        color: #f3c14a;
+    }
+     
+    
+    
+    
+    
+    
+    
+    /* ..............................=============== header SECTION ==================.......................................... */
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .siams{
+        font-size: 15px;
+    }
+    
+    
+    
+    .siam{
+        padding: 50px 0px 10px;
+    }
+    header {
+        background-image: url('../image/S.E.M\ invest\ fund\ backgrud.jpg');  
+        background-size: cover;
+        background-position: center;
+        height: 710px;
+        
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.772);
+        background-blend-mode: multiply;
+        
+    
+    
+    
+    }
+    .logoNav{
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5% 0 5%;
+    }
+    
+    .link{
+        display: inline-block;
+        
+    }
+    
+    .linkselec{
+        display: inline-block;
+    }
+    
+    .greendot{
+       font-size: 10px;
+    }
+    
+    .logoleft{
+        display: block;
+        margin: 0 0 0 0;
+        padding: 10px 0px 0 0;
+    }
+    /* .logo{
+        padding: 40px 1210px 0 0;
+    } */
+    
+    header h1 {
+        font-size: 30px;
+        margin: 0;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: #2c2c2c;
+        padding: 1em;
+        color: #f3c14a;
+    }
+    /* nav a {
+        color: #f3c14a;
+        text-decoration: none;
+        margin: 0 1em;
+    } */
+    .container {
+        padding: 115px;        
+        
+    }
+    .highlight-section h2 {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+        text-align: center;
+    }
+    .highlight-section p {
+        color: #888;
+        font-size: 1.2em;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+        margin: 50px 20px 50px 20px;
+    }
+    .grid-item {
+        border: 1px solid #ddd;
+        padding: 1.5em;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .grid-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .grid-item h3 {
+        margin: 0;
+        margin-bottom: 0.5em;
+        color: #f3c14a;
+    }
+    
+    
+    /*....................================================mousebody SECTION================================................. */ 
+    .white{
+        height: 0px;
+        width: 0px;
+        clip-path: ellipse(50% 25% at 50% 99%);
+    }
+    
+    
+    
+    .mousebody {
+        margin: 0;
+        padding: 23px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 63px;
+        
+    }
+    
+    .scroll-down {
+        position: relative;
+        width: 30px;
+        height: 50px;
+        border: 2px solid  #f3c14a;
+        border-radius: 30px;
+        box-sizing: border-box;
+        animation: bounce 2s infinite;
+        padding: 0 0 0 0;
+    }
+    
+    .scroll-down::after {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-color:  #f3c14a;
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: scroll 2s infinite;
+    }
+    
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(10px);
+        }
+    }
+    
+    @keyframes scroll {
+        0% {
+            opacity: 1;
+            top: 10px;
+        }
+        50% {
+            opacity: 0.5;
+            top: 20px;
+        }
+        100% {
+            opacity: 0;
+            top: 30px;
+        }
+    }
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+                        /* second section after header */
+
+
+
+
+
+
+
+
+
+    .container {
+        padding: 5px;        
+        
+    }
+    .highlight-section h2 {
+        font-size: 15px;
+        margin-bottom: 0.5em;
+        text-align: center;
+    }
+    .highlight-section p {
+        color: #888;
+        font-size: 1.2em;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.1em;
+        margin: 2px 2px 2px 2px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+                                                            /* scrollbar */
+
+ /*....................================================webkit-scrollbar SECTION================================................. */ 
+
+ ::-webkit-scrollbar {
+    width: 0px; /* Width for vertical scrollbar */
+}
+
+/* Style the track */
+::-webkit-scrollbar-track {
+    background: linear-gradient(#ffffff,#c0904d, black)/* Background color of the track */
+}
+
+/* Style the thumb */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#c0904d,white); /* Gradient color */
+    border-radius: 0px; /* Rounded corners */
+}
+/* --------------.................====================About us Section======================.................----------------- */
+
+
+
+    .about-text{
+        display: block;
+        margin: 6px 0 6px -6px;
+        padding: 10px 7px 9px 13px;
+    
+    }
+    .about-right{
+        padding: 4px 4px 4px 4px;
+    }
+    .about-left{
+        padding: 4px 4px 4px 4px;
+    
+    }
+    .leftone{
+        height: 160px;
+        width: 350px;
+    }
+    .rightone{
+        height: 130px;
+        width: 350px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+/* --------------.................====================History us Section======================.................----------------- */
+
+
+
+
+
+
+
+.history-section {
+    margin-top: 90px;
+    padding: 7px 60px 10px 40px;
+}
+.history-section h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+}
+.history-card {
+    background-color: #c0904d;
+    color: white;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+.history-card:hover {
+    transform: translateY(-5px);
+}
+.history-card h3 {
+    margin-bottom: 0.5em;
+}
+.history-card p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------.................==================== MEET OUR TEAM  Section======================.................----------------- */
+
+
+
+
+.meetone{
+    background-color: #f5f8fc;
+    margin: 10px 5px 10px 5px;
+    padding: 6px 0px 6px 0px;
+}
+.meetourteam{
+    display: block;
+    padding: 10px 0px 10px 0px;
+   
+}
+.meetgold{
+    color: #dcaf6d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------.................==================== massage  Section======================.................----------------- */
+
+
+
+
+
+
+
+
+
+.bodyone {
+    margin: 0;
+    padding: 0;
+    background-image: url('../image/ch.png'); /* Replace with your image URL */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.containerone {
+    width: 97%;
+    height: 900px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-section {
+    background: rgba(255, 255, 255, 0.2); /* White background with more transparency */
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    backdrop-filter: blur(-10px); /* Adds a blur effect for better contrast */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Optional border for styling */
+}
+
+.message-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    margin-bottom: 15px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    padding: 10px 5px;
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: #ddd;
+}
+
+.send-button {
+    background-color: #f0a500;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s;
+}
+
+.send-button:hover {
+    background-color: #e08e00;
+}
+
+/* ................................massage two image Section ............................ */
+
+.message-image{
+    display: block;
+    margin: -160px 0px 0 0;
+    padding: 0 0 0 0 ;
+}
+
+/* .message-imageone{
+    height: 380px;
+    width: 475px;
+    margin: -140px 25px 100px 380px;
+    padding: 0 0 0 0 ;
+} */
+
+
+.map-left{
+    padding: 0 0 0 0 ;
+    margin: 0px 0px 0px 0px;
+}
+
+
+
+
+.info-section {
+    margin-top: 30px;
+    display: block;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    color: #000;
+   
+}
+
+
+.map {
+    
+    position: relative;
+    left: 0px;
+    top:10px;
+    padding: 0 0 0 0 ;
+    margin: 0 0 0 0 ;
+}
+.message-imagetwo{
+    margin: 20px 0px 0px 0px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px  #e08e00;
+    height: 250px;
+    width: 360px;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------.................==================== investment  Section======================.................----------------- */
+.more-investment{
+    background-color: #f5f8fc;
+    padding: 30px 0px 0px 0;
+    
+}
+
+.investment{
+ text-align: center;
+ margin: 0px 0px 0px 0px;
+ 
+}
+.investmentone{
+    display: block;
+    
+}
+.investment-imageone{
+    padding: 10px 2px 0px 2px;
+        margin: 0px 0px -2px;
+        height: 240px;
+        width: 355px;
+
+}
+
+
+
+.investment-imagetwo{
+    padding: 10px 2px 0px 2px;
+    margin: 0px 0px -2px;
+    height: 240px;
+    width: 355px;
+}
+
+
+.invest{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.investwave{
+    padding: 10px 5px 0px 5px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+.notwhite{
+    
+    height: 0px;
+    width: 0px;
+    clip-path: ellipse(50% 25% at 50% 99%);
+    padding: 0 0 0 0;
+    margin: 0 0 -5px 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /* --------------.................====================footer  Section======================.................----------------- * */
+
+.footerone{
+    text-align: center;
+}
+
+
+
+.social-linkso{
+    margin: 0px 0 0 120px;
+    padding: 0 0 0 0 ;
+    display: inline-flex;
+    justify-content: center;
+}
+
+
+
+.social-linkso i{
+    align-items: center;
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 1rem;
+    height: 1rem;
+    background-color: transparent;
+    border: 0.2rem solid rgb(250 235 215);
+    border-radius: 50%;
+    color:rgb(250 235 215);
+    margin: 1px 2px;
+    font-size: 1.5rem;
+    transition: 0.2s linear;
+}
+.social-linkso i:hover{
+    align-items: center;
+    justify-content: center;
+    scale: 1.3;
+    color: black;
+    background-color: rgb(250 235 215);
+    filter: drop-shadow(0 0 10px rgb(250 235 215));
+    }
+
+
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*...............Landscape mobile tab device..............2 */
+
+
+
+
+@media only screen and (min-width: 669px) and (max-width: 768px){
+   
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f4f4f9;
+    }
+    
+    /* .............................home SECTION................................................................. */
+    .linkhome{
+        padding: 7px 0 0 0px;
+    }
+     .nav-container .link {
+        display: flex;
+        padding: 8px 0 0 5px;
+        margin: 0 0 0 10px;
+        
+    }
+    
+    .nav-container .link a {
+        position: relative;
+        font-size: 1.2rem;
+        color: antiquewhite;
+        
+        text-decoration: none;
+        font-weight: 550;
+        transition: 0.3s linear;
+    }
+    
+    .nav-container .link a::before {
+        position: absolute;
+        content: "";
+        bottom: -3px;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        background-color:  #f3c14a;
+        transition: 0.2s linear;
+    }
+    
+    .nav-container .link a:hover::before {
+        width: 100%;
+    }
+    
+    .nav-container .link a:hover {
+        color: #f3c14a;
+    }
+     
+    
+    
+    
+    
+    
+    
+    /* ..............................=============== header SECTION ==================.......................................... */
+    
+    
+    
+    .link{
+        display: inline-block;
+    }
+    
+    .linkselec{
+        display: inline-block;
+    }
+    
+    
+    
+    .greendot{
+        padding: 0 0 0 10px;
+    }
+    
+    
+    
+    
+    .siams{
+        font-size: 20px;
+    }
+    
+    
+    
+    .siam{
+        padding: 100px 0px 30px;
+        
+    }
+    header {
+        background-image: url('../image/S.E.M\ invest\ fund\ backgrud.jpg');  
+        background-size: cover;
+        background-position: center;
+        height: 800px;
+        width: 852px;
+        
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.772);
+        background-blend-mode: multiply;
+        
+    
+    
+    
+    }
+    .logoNav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5% 0 5%;
+    }
+    
+    
+    
+    
+    
+    
+    .logoleft{
+        display: flex;
+        margin: 0 0 0 0;
+        padding: 13px 0px 0 0;
+    }
+    /* .logo{
+        padding: 40px 1210px 0 0;
+    } */
+    
+    header h1 {
+        font-size: 50px;
+        margin: 0;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: #2c2c2c;
+        padding: 1em;
+        color: #f3c14a;
+    }
+    /* nav a {
+        color: #f3c14a;
+        text-decoration: none;
+        margin: 0 1em;
+    } */
+    .container {
+        padding: 115px;        
+        
+    }
+    .highlight-section h2 {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+        text-align: center;
+    }
+    .highlight-section p {
+        color: #888;
+        font-size: 1.2em;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+        margin: 50px 20px 50px 20px;
+    }
+    .grid-item {
+        border: 1px solid #ddd;
+        padding: 1.5em;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .grid-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .grid-item h3 {
+        margin: 0;
+        margin-bottom: 0.5em;
+        color: #f3c14a;
+    }
+    
+    
+    /*....................================================mousebody SECTION================================................. */ 
+    .white{
+        height: 265px;
+        width: 851px;
+        clip-path: ellipse(50% 25% at 50% 99%);
+    }
+    
+    
+    
+    .mousebody {
+        margin: 0;
+        padding: 23px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 95px;
+        
+    }
+    
+    .scroll-down {
+        position: relative;
+        width: 26px;
+        height: 44px;
+        border: 2px solid  #f3c14a;
+        border-radius: 30px;
+        box-sizing: border-box;
+        animation: bounce 2s infinite;
+        padding: 0 0 0 0;
+    }
+    
+    .scroll-down::after {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-color:  #f3c14a;
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: scroll 2s infinite;
+    }
+    
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(10px);
+        }
+    }
+    
+    @keyframes scroll {
+        0% {
+            opacity: 1;
+            top: 10px;
+        }
+        50% {
+            opacity: 0.5;
+            top: 20px;
+        }
+        100% {
+            opacity: 0;
+            top: 30px;
+        }
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+                                                            /* scrollbar */
+
+ /*....................================================webkit-scrollbar SECTION================================................. */ 
+
+ ::-webkit-scrollbar {
+    width: 0px; /* Width for vertical scrollbar */
+}
+
+/* Style the track */
+::-webkit-scrollbar-track {
+    background: linear-gradient(#ffffff,#c0904d, black)/* Background color of the track */
+}
+
+/* Style the thumb */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#c0904d,white); /* Gradient color */
+    border-radius: 0px; /* Rounded corners */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .container {
+              
+        
+    }
+    .highlight-section h2 {
+        font-size: 20px;
+        margin-bottom: 0.5em;
+        text-align: center;
+    }
+    .highlight-section p {
+        color: #888;
+        font-size: 1.5em;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.7em;
+        margin: 12px 12px 12px 12px;
+    }
+
+
+
+
+
+
+    .grid-item {
+        border: 1px solid #ddd;
+        padding: 0.7em;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .grid-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .grid-item h3 {
+        margin: 0;
+        margin-bottom: 0.5em;
+        color: #f3c14a;
+    }
+
+
+
+
+
+    
+
+
+
+/* --------------.................====================About us Section======================.................----------------- */
+
+
+
+.about-text{
+    display: block;
+    margin: 5px 0 5px -5px;
+    padding: 10px 10px 10px 10px;
+
+}
+.about-right{
+    padding: 9px 9px 9px 9px;
+}
+.about-left{
+    padding: 9px 9px 9px 9px;
+
+}
+.leftone{
+    height: 360px;
+    width: 750px;
+}
+.rightone{
+    height: 330px;
+    width: 750px;
+}
+.aboutomg{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------.................====================History us Section======================.................----------------- */
+
+
+
+
+
+
+
+.history-section {
+    margin-top: 90px;
+    padding: 5px 50px 8px 35px;
+}
+.history-section h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+}
+.history-card {
+    background-color: #c0904d;
+    color: white;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+.history-card:hover {
+    transform: translateY(-5px);
+}
+.history-card h3 {
+    margin-bottom: 0.5em;
+}
+.history-card p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------.................==================== investment  Section======================.................----------------- */
+.more-investment{
+    background-color: #f5f8fc;
+    padding: 30px 0px 0px 0;
+    
+}
+
+.investment{
+ text-align: center;
+ margin: 0px 0px 0px 0px;
+ 
+}
+.investmentone{
+    display: block;
+    
+}
+.investment-imageone{
+    padding: 10px 5px 0px 5px;
+
+    margin: 0px 0px -3px;
+    height: 450px;
+    width:  750px;
+
+}
+
+
+
+.investment-imagetwo{
+    padding: 10px 5px 0px 5px;
+
+    margin: 0px 0px -3px;
+    height: 450px;
+    width: 750px;
+}
+
+
+.invest{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.investwave{
+    padding: 10px 5px 0px 5px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+.notwhite{
+    
+    height: 65px;
+    width: 750px;
+    clip-path: ellipse(50% 25% at 50% 99%);
+    padding: 0 0 0 0;
+    margin: 0 0 -5px 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* /* --------------.................====================footer  Section======================.................----------------- * */
+
+.footerone{
+    text-align: center;
+}
+
+
+
+.social-linkso{
+    margin: 0px 0 0 220px;
+    padding: 0 0 0 0 ;
+    display: inline-flex;
+    justify-content: center;
+}
+
+
+
+.social-linkso i{
+    align-items: center;
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border: 0.2rem solid rgb(250 235 215);
+    border-radius: 50%;
+    color:rgb(250 235 215);
+    margin: 1px 2px;
+    font-size: 1.5rem;
+    transition: 0.2s linear;
+}
+.social-linkso i:hover{
+    align-items: center;
+    justify-content: center;
+    scale: 1.3;
+    color: black;
+    background-color: rgb(250 235 215);
+    filter: drop-shadow(0 0 10px rgb(250 235 215));
+    }
+
+
+
+
+} 
+
+                                          /* small large laptop */
+
+
+
+
+
+               @media only screen and (min-width: 769px) and (max-width: 1024px){
+                header {
+                    background-image: url('../image/S.E.M\ invest\ fund\ backgrud.jpg');  
+                    background-size: cover;
+                    background-position: center;
+                    height: 858px;
+                    width: 1024px;
+                    
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    text-align: center;
+                    background-color: rgba(0, 0, 0, 0.772);
+                    background-blend-mode: multiply;}
+            .white{
+                width: 1024px;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            .about-text{
+                display: block;
+                margin: 5px 0 5px -5px;
+                padding: 10px 5px 10px 5px;
+            
+            }
+            .about-right{
+                padding: 11px 11px 11px 11px;
+            }
+            .about-left{
+                padding: 11px 11px 11px 11px;
+            
+            }
+            .leftone{
+                height: 430px;
+                width: 1010px;
+            }
+            .rightone{
+                height: 430px;
+                width: 1010px;
+            }
+            .aboutomg{
+                text-align: center;
+            }
+
+
+
+
+
+
+
+/* --------------.................====================History us Section======================.................----------------- */
+
+
+            
+.history-section {
+    margin-top: 90px;
+    padding: 12px 90px 19px 95px;
+}
+
+
+
+
+
+
+
+            
+
+
+
+
+            
+
+
+    
+
+
+
+
+
+
+/* --------------.................==================== investment  Section======================.................----------------- */
+.more-investment{
+    background-color: #f5f8fc;
+    padding: 30px 0px 0px 0;
+    
+}
+
+.investment{
+ text-align: center;
+ margin: 0px 0px 0px 0px;
+ 
+}
+.investmentone{
+    display: block;
+    text-align: center;
+    
+}
+.investment-imageone{
+    padding: 10px 5px 0px 5px;
+
+    margin: 0px 0px -3px;
+    height: 650px;
+    width:  1017px;
+
+}
+
+
+
+.investment-imagetwo{
+    padding: 10px 5px 0px 5px;
+
+    margin: 0px 0px -3px;
+    height: 650px;
+    width: 1017px;
+}
+
+
+.invest{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.investwave{
+    padding: 10px 5px 0px 5px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+.notwhite{
+    
+    height: 100px;
+    width: 1017px;
+    clip-path: ellipse(50% 25% at 50% 99%);
+    padding: 0 0 0 0;
+    margin: 0 0 -5px 0;
+
+}
+
+
+
+
+
+/* footer */
+
+
+.social-linkso{
+    margin: 0px 0 0 240px;
+    padding: 0 0 0 0 ;
+    display: inline-flex;
+    justify-content: center;
+}
+
+
+
+
+                  }
+
+
+
+
+/*..............large laptop device....................5*/
+
+
+
+
+    
+
+@media only screen and (min-width: 1025px) and (max-width:1440px){
+
+
+    header {
+        background-image: url('../image/S.E.M\ invest\ fund\ backgrud.jpg');  
+        background-size: cover;
+        background-position: center;
+        height: 858px;
+        width: 1440px;
+        
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.772);
+        background-blend-mode: multiply;}
+.white{
+    width: 1440px;
+}
+} 
+
+/*..............===========big bigger biggest large laptop device========================....................5*/
+
+
+
+@media only screen and (min-width: 1441px) and (max-width:2560px){
+
+
+/* 
+    .white{
+        width: 0px;
+        height: 0px;
+    } */
+
+
+
+}

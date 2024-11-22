@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+
+
+
+    
+    <style>
+
+
+
+
+
+
+
+
+
+
+
+
+        @import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .bodyan {
+            font-family: "Michroma", sans-serif;
+            
+        }
+
+        .containeran {
+            background-color: black;
+            color: #fff;
+            height: 100%;
+            width: 100%;
+            
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .loading-page {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(to right, gold, rgb(194, 166, 7), rgb(83, 71, 2), black);
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+            justify-content: center;
+            color: #191654;
+        }
+
+        #svg {
+            height: 150px;
+            width: 150px;
+            stroke: white;
+            fill-opacity: 0;
+            stroke-width: 3px;
+            stroke-dasharray: 4500;
+            animation: draw 8s ease;
+        }
+
+        @keyframes draw {
+            0% {
+                stroke-dashoffset: 4500;
+            }
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .name-container {
+            height: 30px;
+            overflow: hidden;
+        }
+
+        .logo-name {
+            color: #fff;
+            font-size: 20px;
+            letter-spacing: 12px;
+            text-transform: uppercase;
+            margin-left: 20px;
+            font-weight: bolder;
+        }
+
+        /*============================================= button======================================================== */
+
+
+
+
+
+
+
+
+
+        
+    :root {
+      --clr: #00ffc6; /* Default button highlight color */
+      --x: 50%; /* Default X position for effects */
+      --y: 50%; /* Default Y position for effects */
+    }
+    body{
+      background: #222;
+    }
+    .bodybetterbutton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #222;
+      font-family: Arial, sans-serif;
+    }
+
+    a {
+      position: relative;
+      display: inline-block;
+      padding: 20px 60px;
+      border-radius: 50px;
+      color: #999;
+      font-size: 25px;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      text-decoration: none;
+      background: #2d2d2d;
+      overflow: hidden;
+      transition: all 0.5s ease;
+      z-index: 0;
+    }
+
+    a:hover {
+      color: var(--clr);
+      box-shadow: 0 0 15px var(--clr), 0 0 25px var(--clr), 0 0 35px var(--clr);
+    }
+
+    a::before {
+      content: "";
+      position: absolute;
+      top: var(--y);
+      left: var(--x);
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(var(--clr), transparent);
+      opacity: 0;
+      border-radius: 50%;
+      transition: opacity 0.5s, top 0s, left 0s;
+      z-index: -1;
+    }
+
+    a:hover::before {
+      opacity: 1;
+    }
+
+    a::after {
+      content: "";
+      position: absolute;
+      inset: 2px;
+      background: rgba(45, 45, 45, 0.8);
+      border-radius: 48px;
+      z-index: -1;
+    }
+
+
+
+
+
+
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+
+
+
+
+
+
+<!-- ===========================================anemation================================================================= -->
+
+
+
+
+    <div class="bodyan">
+        <div class="containeran">
+
+
+
+
+            
+ 
+
+    <div class="bodybetterbutton">
+        <a href="investment.html" style="--clr: #00ffc6" id="link">Siam Investment AG</a>
+  
+    <script>
+      const btn = document.getElementById("link");
+  
+      btn.addEventListener("mousemove", function (e) {
+        const rect = btn.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+  
+        btn.style.setProperty("--x", `${x}px`);
+        btn.style.setProperty("--y", `${y}px`);
+      });
+    </script>
+      </div>
+
+
+
+
+
+
+        </div>
+    
+        <div class="loading-page">
+            <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-labelledby="logoDesc">
+                <title id="logoDesc">Animated SVG Logo</title>
+                <path
+                    d="M30,20 C30,10 70,10 70,20 C70,30 30,30 30,40 C30,50 70,50 70,60 C70,70 30,70 30,80"
+                    stroke-linecap="round" />
+            </svg>
+    
+            <div class="name-container">
+                <div class="logo-name">siam investment</div>
+            </div>
+        </div>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+            integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            gsap.fromTo(
+                ".loading-page",
+                { opacity: 1 },
+                {
+                    opacity: 0,
+                    display: "none",
+                    duration: 1.5,
+                    delay: 3.5,
+                }
+            );
+    
+            gsap.fromTo(
+                ".logo-name",
+                {
+                    y: 50,
+                    opacity: 0,
+                },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 2,
+                    delay: 0.5,
+                }
+            );
+        </script>
+    </div>
+
+
+
+
+
+
+
+    
+
+
+<!--===========================================  better button  ============================================================ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
