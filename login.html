@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --yellow: #fffd44;
+      --purple: #ff0057;
+      --green: #00ff0a;
+      --white: #fff;
+      --black: #111;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Quicksand", sans-serif;
+    }
+
+    body {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--black);
+    }
+
+    form {
+      width: 500px;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .login {
+      width: 300px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: var(--white);
+    }
+
+    input {
+      width: 100%;
+      padding: 12px 20px;
+      background: transparent;
+      border: 2px solid var(--white);
+      border-radius: 40px;
+      outline: none;
+      font-size: 1.2em;
+      color: var(--white);
+    }
+
+    input::placeholder {
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    button {
+      width: 100%;
+      padding: 12px 20px;
+      border-radius: 40px;
+      border: none;
+      font-size: 1.2em;
+      color: var(--white);
+      cursor: pointer;
+      transition: 0.5s;
+      background: linear-gradient(45deg, var(--purple), var(--yellow));
+    }
+
+    button:hover {
+      filter: drop-shadow(0 0 5px var(--yellow));
+    }
+
+    .links {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    p {
+      color: var(--white);
+      transition: 0.5s;
+      cursor: pointer;
+    }
+
+    p:hover {
+      color: var(--yellow);
+    }
+
+    i {
+      position: absolute;
+      border: 2px solid var(--white);
+      inset: 0;
+      transition: 0.5s;
+    }
+
+    .b1 {
+      border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+      animation: clockwise 6s linear infinite;
+    }
+
+    .b2 {
+      border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+      animation: clockwise 4s linear infinite;
+    }
+
+    .b3 {
+      border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+      animation: counterclockwise 10s linear infinite;
+    }
+
+    @keyframes clockwise {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes counterclockwise {
+      0% {
+        transform: rotate(360deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+
+    form:hover .b1 {
+      border: 6px solid var(--green);
+      filter: drop-shadow(0 0 20px var(--green));
+    }
+
+    form:hover .b2 {
+      border: 6px solid var(--purple);
+      filter: drop-shadow(0 0 20px var(--purple));
+    }
+
+    form:hover .b3 {
+      border: 6px solid var(--yellow);
+      filter: drop-shadow(0 0 20px var(--yellow));
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <i class="b1"></i>
+    <i class="b2"></i>
+    <i class="b3"></i>
+    <div class="login">
+      <h1>LOGIN</h1>
+      <input type="text" placeholder="Username" />
+      <input type="password" placeholder="Password" />
+      <button>Sign in</button>
+      <div class="links">
+        <p>Forget Password</p>
+        <p>Sign up</p>
+      </div>
+    </div>
+  </form>
+</body>
+</html>
